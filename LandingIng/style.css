@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.divisor {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "ladoizquierdo ladoderecho"
+    "ladoizquierdo ladoderecho2"
+    "ladoizquierdo ladoderecho3";
+    width: 99%;
+    height: 400px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.grid-container-ladoizq {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-left: 0px;
+    border: solid rgba(141, 141, 141, 0.481) 0.5px;
+    grid-area: ladoderecho;
+}
+
+.logotipo {
+    width: 200px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 20px;
+    background: rgba(247, 245, 245, 0.796);
+    border: solid rgba(141, 141, 141, 0.09) 0.5px;
+    outline: 0px;
+    height: 35px;
+    color: grey;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 10px;
+    background: rgba(247, 245, 245, 0.796);
+    border: solid rgba(141, 141, 141, 0.09) 0.5px;
+    outline: 0px;
+    height: 35px;
+}
+
+input[type="button"] {
+    width: 90%;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 20px;
+    background: #74b7ffa3;
+    border-style: none;
+    border-radius: 5px;
+    outline: 0px;
+    color: white;
+    height: 30px;
+    padding-top: 7px;
+}
+
+.icono {
+    width: 15px;
+    margin-top: 30px;
+}
+
+.iconofacebook {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.iconofacebook a {
+    color:#385185;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-data a {
+    width: 100%;
+    color: #385185;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.container-data {
+    margin-top: 12px;
+    color: rgb(92, 5, 213);
+}
+
+.container-or {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: grey;
+}
+
+.container-or hr {
+    width: 120px;
+    height: 1px;
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.522);
+    margin-top: 8px;
+}
+
+.container-or h2 {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.522);
+}
+
+.container-register {
+    width: 350px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    border: solid rgba(141, 141, 141, 0.481) 0.5px;
+    grid-area: ladoderecho2;
+}
+
+.container-register a {
+    text-decoration: none;
+}
+
+.contenedor-apps {
+    width: 350px;
+    margin-top: 0px;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    grid-area: ladoderecho3;
+}
+
+.contenedor-apps p {
+    margin-bottom: 20px;
+}
+
+#iconoandroid {
+    width: 100px;
+}
+
+#iconoig {
+    width: 100px;
+}
+
+.grid-container-ladoder {
+    grid-area: ladoizquierdo;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+#moviles {
+    width: 400px;
+    margin-right: 0px;
+}
+
+/* Para tablet */
+@media screen and (min-width: 451px) and (max-width: 875px) {
+    .grid-container-ladoder {
+        display: none;
+    }
+}
+/* Para movil */
+@media screen and (max-width: 450px) {
+    body {
+        background-color: white;
+    }
+    .grid-container-ladoder {
+        display: none;
+    }
+    .grid-container-ladoizq {
+        border: none;
+    }
+    .container-register {
+        border: none
+    }
+}

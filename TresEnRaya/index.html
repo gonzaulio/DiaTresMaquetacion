@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Aquí va mi título -->
+    <header class="titulo">
+        <h1>Tres en Raya</h1>
+    </header>
+
+    <!-- Este es mi contenedor para toda la estructura del juego -->
+    <main>
+             <!-- Este será mi contenedor para los botones -->
+            <section class="contenedor">
+                <button id="boton1" class="botoncontenedor"></button>
+                <button id="boton2" class="botoncontenedor"></button>
+                <button id="boton3" class="botoncontenedor"></button>
+                <button id="boton4" class="botoncontenedor"></button>
+                <button id="boton5" class="botoncontenedor"></button>
+                <button id="boton6" class="botoncontenedor"></button>
+                <button id="boton7" class="botoncontenedor"></button>
+                <button id="boton8" class="botoncontenedor"></button>
+                <button id="boton9" class="botoncontenedor"></button>
+            </section>
+
+            <section class="ladoderecho">
+                    <!-- Contador de partidas -->
+                    <section class="contadordepartidas">
+                        <p>El total de tus partidas son:</h4>
+                        <p id="partidas"> 0 </p>
+                    </section>
+
+                    <!-- contador de victorias, el cual también será un Grid -->
+                    <section class="contadordevictorias">
+                        <p id="jugadoruno">Jugador Uno: </p>
+                        <p id="victorias1">0</p>
+                        <p id="jugadordos">Jugador Dos:</p>
+                        <p id="victorias2">0</p>
+                    </section>
+
+                    <!-- Botón para resetear el tablero y para resetear el resultado  -->
+                    <section class="botonesreseteo">
+                        <button type="button" id="reseteartablero" onclick="resetear()">Resetear el tablero</button>
+                        <button id="resetearjuego" onclick="location.reload()">Resetear el juego</button>
+                    </section>
+            </section>
+    </main>
+    <script src="tresenraya.js"></script>
+    
+</body>
+</html>

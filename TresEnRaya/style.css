@@ -1,0 +1,189 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(108deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+}
+.titulo {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "area1 area2";
+    margin: auto;
+    padding: 0px;
+    width: 50%;
+    height: 450px;
+    background-color: rgba(251, 255, 0, 0.179);
+    border-radius: 20px;
+    border: solid white;
+}
+
+.contenedor {
+    width: 310px;
+    height: 310px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+    "boton1 boton2 boton3"
+    "boton4 boton5 boton6"
+    "boton7 boton8 boton9";
+    grid-area: area1;
+}
+
+.botoncontenedor {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.botoncontenedor:hover {
+    background-color: teal;
+}
+
+#boton1 {
+    grid-area: boton1;
+}
+
+#boton2 {
+    grid-area: boton2;
+}
+
+#boton3 {
+    grid-area: boton3;
+}
+
+#boton4 {
+    grid-area: boton4;
+}
+
+#boton5 {
+    grid-area: boton5;
+}
+
+#boton6 {
+    grid-area: boton6;
+}
+
+#boton7 {
+    grid-area: boton7;
+}
+
+#boton8 {
+    grid-area: boton8;
+}
+
+#boton9 {
+    grid-area: boton9;
+}
+
+.ladoderecho {
+    grid-area: area2;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+    "linea1"
+    "linea2"
+    "linea3";
+    
+    width: 310px;
+    height: 310px;
+
+}
+
+.contadordepartidas {
+    text-align: center;
+    grid-area: linea1;
+    background-color: rgba(251, 255, 0, 0.179);
+    border-radius: 20px;
+    border: solid white;
+    color: white;
+    height: 100px;
+    font-family: 'Carter One', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.contadordevictorias {
+    text-align: center;
+    grid-area: linea2;
+    background-color: rgba(251, 255, 0, 0.179);
+    border-radius: 20px;
+    border: solid white;
+    color: white;
+    height: 100px;
+    font-family: 'Carter One', cursive;
+    font-size: 20px;
+    padding: 0px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-areas:  
+    "sector1 sector2"
+    "sector3 sector4";
+    height: 90px;
+}
+
+#jugadoruno {
+    grid-area: sector1;
+}
+
+#jugadordos {
+    grid-area: sector2;
+    
+}
+
+#victorias1 {
+    grid-area: sector3;
+}
+
+#victorias2 {
+    grid-area: sector4;
+}
+
+.botonesreseteo {
+    grid-area: linea3;
+    text-align: center;   
+    padding-top: 10%;
+    height: 100px;
+    margin: 0px;
+    font-family: 'Carter One', cursive;
+}
+
+#reseteartablero {
+    height: 50px;
+    width: 140px;
+    border: solid white;
+    border-radius: 20px;
+}
+
+#reseteartablero:hover {
+    background-color: teal;
+    color: white;
+}
+
+#resetearjuego {
+    height: 50px;
+    width: 150px;
+    border: solid white;
+    border-radius: 20px;
+}
+
+#resetearjuego:hover {
+    background-color: teal;
+    color: white;
+}
