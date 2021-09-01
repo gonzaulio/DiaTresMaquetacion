@@ -187,3 +187,41 @@ main {
     background-color: teal;
     color: white;
 }
+
+@media screen and (min-width: 451px) and (max-width: 875px) {
+    main {
+    margin: auto;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    }
+
+    .contenedor {
+        width: fit-content;
+        display: inline-flexbox;
+    }
+
+    .ladoderecho {
+        display: inline;
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 867px) and (max-width: 1200px) {
+    main {
+    margin: auto;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    }
+
+    .contenedor {
+        width: fit-content;
+        display: inline-flexbox;
+    }
+
+    .ladoderecho {
+        display: inline;
+        width: fit-content;
+    }
+}
